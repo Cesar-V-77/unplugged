@@ -10,9 +10,10 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* * {
-   outline: 2px dotted red;
-} */
+* {
+  /* outline: 2px dotted red; */
+}
+
 html {
   color: #222;
   font-size: 1em;
@@ -88,10 +89,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*-------------------- Global Styles --------------------*/
+.content-wrapper {
+  margin: 50px 0;
+  width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h3 {
+  padding: 20px 0;
+}
+
+h4 {
+  padding: 20px 0;
+}
 /*-------------------- Base Header - Footer Styles--------------------*/
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -99,11 +122,36 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+header a {
+  padding: 0 0 10px;
+}
+
+.header-divider {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0 0;
+}
+
+header nav {
+  width: 50%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li a {
+  padding: 0;
+  text-decoration: none;
 }
 
 footer {
@@ -111,6 +159,23 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0 0;
+}
+
+footer .contact {
+  margin: 0 0 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .social {
+  padding: 0 0 50px;
 }
 
 footer .social-icons {
@@ -123,8 +188,12 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
 /*-------------------- Home Page Main Styles --------------------*/
 .hero-area {
   display: flex;
@@ -136,9 +205,28 @@ aside {
   justify-content: center;
 }
 
+.form-description p {
+  margin: 0 0 30px;
+}
+
+.form input[type="text"] {
+  padding: 1em;
+  margin: 0 0 20px;
+  width: 89%;
+}
+
+.form input[type="button"] {
+  padding: 20px 0;
+  margin: 20px 0 0;
+  width: 100%;
+}
 .features {
   display: flex;
   justify-content: center;
+}
+
+.features h2 {
+  padding: 0 0 60px;
 }
 
 .features .features-items {
@@ -148,9 +236,33 @@ aside {
   align-items: flex-start;
 }
 
+.features article {
+  margin: 30px 0;
+  width: 60%;
+}
+
+.features p {
+  margin: 0;
+}
+
+.fontawesome-icon {
+  padding: 0 0 40px;
+}
 .reviews {
   display: flex;
   justify-content: center;
+}
+
+.reviews h2 {
+  padding: 0 0 40px;
+}
+
+.reviews h3 {
+  width: 50%;
+}
+
+.reviews p {
+  margin: 0;
 }
 /*-------------------- About Page Main Styles --------------------*/
 .mission {
@@ -161,6 +273,10 @@ aside {
 .contact-section {
   display: flex;
   justify-content: center;
+}
+
+.contact-content p {
+  margin: 0;
 }
 /*--------------------FAQ Page Main Styles --------------------*/
 .faq {
@@ -173,6 +289,19 @@ aside {
   justify-content: center;
   flex-flow: row wrap;
   align-items: flex-start;
+  margin: 50px 0 0;
+}
+
+.faq h2 {
+  margin: 0 0 40px;
+}
+
+.faq-content {
+  margin: 0 0 50px;
+}
+
+.faq-content p {
+  margin: 0;
 }
 /* ==========================================================================
    Helper classes
