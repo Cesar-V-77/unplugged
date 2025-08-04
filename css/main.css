@@ -10,9 +10,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-* {
-  /* outline: 2px dotted red; */
-}
+/* * {
+  outline: 2px dotted red;
+} */
 
 html {
   color: #222;
@@ -114,7 +114,7 @@ h4 {
 header {
   display: flex;
   justify-content: center;
-  padding: 15px 0;
+  margin: 15px 0;
 }
 
 header .content-wrapper {
@@ -125,15 +125,10 @@ header .content-wrapper {
   margin: 0;
 }
 
-header a {
-  padding: 0 0 10px;
-}
-
 .header-divider {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  padding: 20px 0 0;
+  height: 1px;
+  margin: 10px 0 20px;
 }
 
 header nav {
@@ -150,7 +145,6 @@ header nav ul {
 }
 
 nav ul li a {
-  padding: 0;
   text-decoration: none;
 }
 
@@ -175,7 +169,7 @@ footer p {
 }
 
 footer .social {
-  padding: 0 0 50px;
+  margin: 0 0 50px;
 }
 
 footer .social-icons {
@@ -218,7 +212,7 @@ aside {
 .form input[type="button"] {
   padding: 20px 0;
   margin: 20px 0 0;
-  width: 100%;
+  width: 99%;
 }
 .features {
   display: flex;
@@ -226,7 +220,7 @@ aside {
 }
 
 .features h2 {
-  padding: 0 0 60px;
+  margin: 0 0 60px;
 }
 
 .features .features-items {
@@ -243,6 +237,7 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .fontawesome-icon {
@@ -391,15 +386,144 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+  /*** General Styles ***/
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /*** Header ***/
+  header {
+    margin: 33px 0;
+  }
+
+  header .content-wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header nav {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  /*** Hero Area ***/
+
+  /*** Aside ***/
+  aside .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0;
+  }
+
+  .form-description,
+  .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /*** Features ***/
+  .features h2 {
+    margin: 0 0 20px;
+  }
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+  .fontawesome-icon {
+    padding: 0 0 30px;
+  }
+
+  .features .features-item-description {
+    width: 50%;
+  }
+
+  /*** Reviews ***/
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews-image,
+  .reviews-description {
+    width: 49%;
+  }
+
+  /*** Footer ***/
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin: 0;
+  }
+
+  footer .social {
+    margin: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /*--------------------About Page--------------------*/
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0 0;
+  }
+
+  .mission-content p {
+    width: 44%;
+    margin: 0;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 78%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /*--------------------FAQ Page--------------------*/
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
 }
 
 /* ==========================================================================
