@@ -147,9 +147,11 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
+  margin: 0;
 }
 
 address {
@@ -175,6 +177,10 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider {
@@ -248,6 +254,9 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url("../img/unplugged-retreat.jpg") center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
 }
 
 aside {
@@ -295,6 +304,8 @@ aside .form {
 .features {
   display: flex;
   justify-content: center;
+  background: url("../img/unplugged-retreat-features.jpg") center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
@@ -508,6 +519,10 @@ aside .form {
     width: 100%;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   .header-divider {
     display: none;
   }
@@ -521,7 +536,9 @@ aside .form {
   }
 
   /*** Hero Area ***/
-
+  .hero-area {
+    min-height: 600px;
+  }
   /*** Aside ***/
   aside .content-wrapper {
     display: flex;
@@ -697,6 +714,9 @@ aside .form {
     width: 70%;
   }
 
+  .hero-area {
+    min-height: 420px;
+  }
   /*** Aside ***/
   aside .content-wrapper {
     justify-content: space-around;
