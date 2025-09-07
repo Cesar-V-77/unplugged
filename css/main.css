@@ -658,6 +658,10 @@ aside .form {
     margin: 0;
   }
 
+  .map figure {
+    padding-bottom: 45.57%;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -781,6 +785,10 @@ aside .form {
 
   .contact-content h4 {
     font-size: 1.875em;
+  }
+
+  .map figure {
+    padding-bottom: 37.5%;
   }
 
   /*--------------------FAQ Page--------------------*/
