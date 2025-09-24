@@ -218,7 +218,7 @@ footer {
 }
 
 footer .content-wrapper {
-  width: 55%;
+  width: 56%;
   margin: 50px 0 0;
 }
 
@@ -245,6 +245,17 @@ footer .social-icons p {
   justify-content: center;
   align-items: center;
   padding: 0;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  font-size: 1.3125rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 footer .copyright {
@@ -611,7 +622,7 @@ aside .form {
   }
   /*** Footer ***/
   footer .content-wrapper {
-    width: 65%;
+    width: 75%;
     margin: 100px 0;
   }
 
@@ -635,14 +646,21 @@ aside .form {
 
   footer .contact {
     margin: 0;
+    width: 30%;
   }
 
   footer .social {
     margin: 0;
+    width: 40%;
+  }
+
+  footer .social-icons {
+    justify-content: space-between;
   }
 
   footer .copyright {
     width: 100%;
+    font-weight: bold;
   }
 
   /*--------------------About Page--------------------*/
@@ -743,7 +761,7 @@ aside .form {
   }
 
   .form-description,
-  .form {
+  aside .form {
     width: 30%;
   }
 
@@ -774,6 +792,16 @@ aside .form {
   footer .contact h4,
   footer .social h4 {
     font-size: 1.875em;
+  }
+
+  footer .contact {
+    margin: 0;
+    width: 20%;
+  }
+
+  footer .social {
+    margin: 0;
+    width: 20%;
   }
 
   /*--------------------About Page--------------------*/
