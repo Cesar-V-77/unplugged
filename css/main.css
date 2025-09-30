@@ -104,8 +104,6 @@ body {
 ul,
 ol {
   list-style-type: none;
-  /* font-size: 1.125em; */
-  /* font-weight: bold; */
 }
 
 a {
@@ -260,6 +258,7 @@ footer .social-icons p {
 
 footer .copyright {
   margin: 20px 0;
+  font-weight: 600;
 }
 /*-------------------- Home Page Main Styles --------------------*/
 .hero-area {
@@ -267,6 +266,7 @@ footer .copyright {
   justify-content: center;
   background: url("../img/unplugged-retreat.jpg") center no-repeat #333;
   background-size: cover;
+  background-position: center;
   min-height: 500px;
 }
 
@@ -277,7 +277,7 @@ aside {
 }
 
 .form-description {
-  margin: 0 0 30px;
+  margin: 0 0 15px;
 }
 
 .form-description p {
@@ -285,7 +285,7 @@ aside {
 }
 
 aside .form {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .form input[type="text"] {
@@ -297,11 +297,12 @@ aside .form {
   width: 100%;
   font-size: 1.125em;
   font-weight: 500;
+  border: none;
 }
 
 .form input[type="button"] {
   padding: 20px 0;
-  margin: 20px 0 0;
+  margin: 0;
   width: 100%;
   background-color: #2a423a;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
@@ -514,7 +515,6 @@ aside .form {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /*Tablet styles here*/
   /*** General Styles ***/
   .content-wrapper {
     max-width: 640px;
@@ -566,6 +566,7 @@ aside .form {
   .hero-area {
     min-height: 600px;
   }
+
   /*** Aside ***/
   aside .content-wrapper {
     display: flex;
@@ -620,6 +621,7 @@ aside .form {
     margin: 0;
     padding-top: 0;
   }
+
   /*** Footer ***/
   footer .content-wrapper {
     width: 75%;
@@ -631,10 +633,6 @@ aside .form {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
-  }
-
-  footer p {
-    line-height: 1.125rem;
   }
 
   footer .contact h4,
@@ -660,7 +658,6 @@ aside .form {
 
   footer .copyright {
     width: 100%;
-    font-weight: bold;
   }
 
   /*--------------------About Page--------------------*/
@@ -715,7 +712,6 @@ aside .form {
 }
 
 @media only screen and (min-width: 1200px) {
-  /*Desktop styles here*/
   /*** General Styles ***/
   .content-wrapper {
     max-width: 960px;
@@ -738,6 +734,7 @@ aside .form {
     font-size: 1.125em;
     line-height: 1.5rem;
   }
+
   /*** Header ***/
   header {
     padding: 15px 0;
@@ -748,13 +745,14 @@ aside .form {
   }
 
   /*** Hero Area ***/
+  .hero-area {
+    background-size: 140%;
+  }
+
   .hero-area .content-wrapper h1 {
     width: 70%;
   }
 
-  .hero-area {
-    min-height: 420px;
-  }
   /*** Aside ***/
   aside .content-wrapper {
     justify-content: space-around;
@@ -779,7 +777,6 @@ aside .form {
     padding: 0 0 50px;
   }
 
-  /* .reviews-image, */
   .reviews-description {
     width: 42%;
   }
