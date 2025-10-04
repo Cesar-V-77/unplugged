@@ -356,6 +356,10 @@ aside .form {
   line-height: 1.875rem;
 }
 
+.reviews-image figure {
+  border: 0.3125rem solid #527158;
+}
+
 .reviews h3 {
   width: 55%;
 }
@@ -616,6 +620,12 @@ aside .form {
     width: 49%;
   }
 
+  .reviews-image {
+    display: flex;
+    align-items: center;
+    background-color: #202322;
+  }
+
   .reviews h3 {
     width: 75%;
     margin: 0;
@@ -697,6 +707,8 @@ aside .form {
   }
 
   .faq-content {
+    display: flex;
+    flex-direction: column;
     flex-basis: 45%;
   }
 
@@ -707,7 +719,12 @@ aside .form {
   .faq h4,
   .faq p {
     font-size: 0.875em;
-    line-height: 0.9844rem;
+    line-height: 1.166rem;
+  }
+
+  .faq h4 {
+    flex-basis: 3rem;
+    padding: 10px 0;
   }
 }
 
@@ -825,7 +842,7 @@ aside .form {
   .faq h4,
   .faq p {
     font-size: 1.125em;
-    line-height: 1.125rem;
+    line-height: 1.5rem;
   }
 }
 
