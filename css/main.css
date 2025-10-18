@@ -613,6 +613,7 @@ aside .form {
 
   .reviews h2 {
     width: 85%;
+    line-height: 2.25rem;
   }
 
   .reviews-image,
