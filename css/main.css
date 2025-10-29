@@ -98,7 +98,8 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  color: #e2e3ed;
+  /*Changed color for better contrast*/
+  color: #e9eaf1;
 }
 
 ul,
@@ -125,12 +126,19 @@ h1 {
   font-weight: 500;
 }
 
+/*Added .faq h1 and .mission h1*/
+.faq h1,
+.mission h1,
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.875em;
   font-weight: 500;
 }
 
+/*Added .faq h2, .form-description h2, and .form h2*/
+.faq h2,
+.form-description h2,
+.form h2,
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
@@ -414,7 +422,8 @@ aside .form {
   margin: 50px 0 0;
 }
 
-.faq h2 {
+/*Added .faq h1 during header hierarchy review*/
+.faq h1 {
   margin: 0 0 40px;
   line-height: 1.875rem;
 }
@@ -423,6 +432,8 @@ aside .form {
   margin: 0 0 50px;
 }
 
+/*Added .faq-content h2*/
+.faq-content h2,
 .faq-content h4 {
   line-height: 1.5rem;
 }
@@ -530,11 +541,16 @@ aside .form {
     line-height: 3rem;
   }
 
+  /*Added .mission h1*/
+  .mission h1,
   h2 {
     font-size: 2.25em;
     line-height: 3rem;
   }
 
+  /*Added .form-description h2 and .form h2*/
+  .form-description h2,
+  .form h2,
   h3 {
     font-size: 1.5em;
     line-height: 1.875rem;
@@ -642,12 +658,13 @@ aside .form {
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
   }
 
-  footer .contact h4,
-  footer .social h4 {
+  /*Added footer .contact h3, footer .social h3, and deleted h4 footer header hierarchy*/
+  footer .contact h3,
+  footer .social h3 {
     font-size: 1.5em;
     margin-bottom: 40px;
     padding: 0;
@@ -698,7 +715,8 @@ aside .form {
     align-items: flex-start;
   }
 
-  .contact-content h4 {
+  /*Added .contact-content h3 and deleted h4 header hierarchy*/
+  .contact-content h3 {
     font-size: 1.5em;
   }
 
@@ -713,17 +731,22 @@ aside .form {
     flex-basis: 45%;
   }
 
-  .faq h2 {
+  /*Added .faq h1*/
+  .faq h1 {
     width: 100%;
+    font-size: 2.25em;
   }
 
+  /*Added .faq h2*/
+  .faq h2,
   .faq h4,
   .faq p {
     font-size: 0.875em;
     line-height: 1.166rem;
   }
 
-  .faq h4 {
+  /*Added .faq h2 and deleted h4 header hierarchy*/
+  .faq h2 {
     flex-basis: 3rem;
     padding: 10px 0;
   }
@@ -743,6 +766,9 @@ aside .form {
     font-size: 2.25em;
   }
 
+  /*Added .form-description h2 and .form h2*/
+  .form-description h2,
+  .form h2,
   h3,
   h4 {
     font-size: 1.875em;
@@ -804,8 +830,9 @@ aside .form {
     width: 81%;
   }
 
-  footer .contact h4,
-  footer .social h4 {
+  /*Added footer .contact h3, footer .social h3, and deleted h4 header hierarchy*/
+  footer .contact h3,
+  footer .social h3 {
     font-size: 1.875em;
   }
 
@@ -820,13 +847,14 @@ aside .form {
   }
 
   /*--------------------About Page--------------------*/
-  .mission .content-wrapper h2,
+  /*Added .mission .content-wrapper h1 and deleted h2 header hierarchy*/
+  .mission .content-wrapper h1,
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
   }
-
-  .contact-content h4 {
+  /*Added .contact-content h3 and deleted h4 header hierarchy*/
+  .contact-content h3 {
     font-size: 1.875em;
   }
 
@@ -835,12 +863,14 @@ aside .form {
   }
 
   /*--------------------FAQ Page--------------------*/
-  .faq h2 {
+  /*Added .faq h1 and deleted h2 header hierarchy*/
+  .faq h1 {
     width: 100%;
     font-size: 3em;
   }
 
-  .faq h4,
+  /*Added .faq h2 and deleted h4 header hierarchy*/
+  .faq h2,
   .faq p {
     font-size: 1.125em;
     line-height: 1.5rem;
